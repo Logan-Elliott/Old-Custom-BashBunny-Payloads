@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Title:         updateWindows-and-OpenDefender
+# Author:        Parad0x01 (Logan Elliott)
+# Version:       0.1
+# Plug2Pwn:	 Unknown
+
+#Check For Windows Updates
+ATTACKMODE HID
+LED Y 200
+Q GUI r
+Q DELAY 500
+Q STRING "ms-settings:windowsupdate-action"
+Q DELAY 500
+Q ENTER
+
+#Done
+LED G 500

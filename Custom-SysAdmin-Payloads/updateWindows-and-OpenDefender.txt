@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+# Title:         updateWindows-and-OpenDefender
+# Author:        Parad0x01 (Logan Elliott)
+# Version:       0.2
+# Plug2Pwn:	 Unknown
+
+#Check For Updates Then Open Defender
+ATTACKMODE HID
+LED Y 200
+Q GUI r
+Q DELAY 500
+Q STRING "ms-settings:windowsupdate-action"
+Q DELAY 500
+Q ENTER
+LED W 200
+Q GUI r
+Q DELAY 500
+Q STRING "C:\Program Files\Windows Defender\msascui.exe"
+Q DELAY 500
+Q ENTER
+Q DELAY 500
+Q ENTER
+Q DELAY 500
+Q RIGHTARROW
+Q DELAY 200
+Q RIGHTARROW
+Q DELAY 200
+Q TAB
+Q DELAY 200
+Q TAB
+Q DELAY 300
+Q ENTER
+
+#Done
+LED G 500
